@@ -29,4 +29,9 @@
     <!--  String untuk Kalkulator  -->
     <string name="kalkulator_title">KALKULATOR</string>
     <string name="kalkulator_btn_kembali">KEMBALI</string>
+
+    <!--  String untuk Login  -->
+    <string name="login_title">Login</string>
+    <string name="login_desc">Silahkan Login Disini!</string>
+    <string name="btn_login">Login</string>
 </resources>

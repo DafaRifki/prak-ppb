@@ -2,10 +2,8 @@ package com.example.a231106040875;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,31 +11,29 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-    private int waktu = 4000;
+public class LoginActivity extends AppCompatActivity {
+
+    private Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-
-        // make a handler to handle intent by time
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // function intent
-                Intent splash = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(splash);
-                finish();
-            }
-        }, waktu);
-
+        setContentView(R.layout.activity_login);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
+        btnLogin = findViewById(R.id.btnLogin);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent login = new Intent(LoginActivity.this, DashboardActivity.class);
+                startActivity(login);
+            }
+        });
     }
 }
