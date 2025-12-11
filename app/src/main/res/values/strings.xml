@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">231106040875</string>
+    <string name="title">Fudegami App</string>
+    <string name="version">Versi 1.0</string>
+    <string name="btn_submit">SUBMIT</string>
+    <string name="copyright">Copyright 2025 @ Fudegami.Inc</string>
+
+    <!-- String untuk dashboard -->
+    <string name="dash_title">DASHBOARD APP</string>
+    <string name="dash_version">Versi 1.0</string>
+    <string name="dash_btn_profil">PROFILE</string>
+    <string name="dash_btn_prodi">PROGRAM STUDI</string>
+    <string name="dash_btn_matakuliah">MATA KULIAH</string>
+    <string name="dash_btn_calc">KALKULATOR</string>
+    <string name="dash_btn_logout">LOGOUT</string>
+
+    <!--  String untuk profile  -->
+    <string name="profil_title">MY PROFILE</string>
+    <string name="profil_btn_kembali">KEMBALI</string>
+
+    <!--  String untuk Program Studi  -->
+    <string name="prodi_title">PROGRAM STUDI</string>
+    <string name="prodi_btn_kembali">KEMBALI</string>
+
+    <!--  String untuk Mata Kuliah  -->
+    <string name="mk_title">MATA KULIAH</string>
+    <string name="mk_btn_kembali">KEMBALI</string>
+
+    <!--  String untuk Kalkulator  -->
+    <string name="kalkulator_title">KALKULATOR</string>
+    <string name="kalkulator_btn_kembali">KEMBALI</string>
+</resources>
