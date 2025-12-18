@@ -18,6 +18,8 @@ public class DashboardActivity extends AppCompatActivity {
     private Button btnProdi;
     private Button btnKalkulator;
 
+    Button btnLogout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,7 @@ public class DashboardActivity extends AppCompatActivity {
         btnProdi = findViewById(R.id.btnProdi);
         btnMk = findViewById(R.id.btnMataKuliah);
         btnKalkulator = findViewById(R.id.btnKalkulator);
+        btnLogout = findViewById(R.id.btnLogout);
 
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +67,16 @@ public class DashboardActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent kalkulator = new Intent(DashboardActivity.this, KalkulatorActivity.class);
                 startActivity(kalkulator);
+            }
+        });
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Logout berhasil..", Toast.LENGTH_LONG).show();
+                Intent logout = new Intent(DashboardActivity.this, LoginActivity.class);
+                startActivity(logout);
+                finish();
             }
         });
     }

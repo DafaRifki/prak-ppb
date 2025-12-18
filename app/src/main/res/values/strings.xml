@@ -32,6 +32,6 @@
 
     <!--  String untuk Login  -->
     <string name="login_title">Login</string>
-    <string name="login_desc">Silahkan Login Disini!</string>
+    <string name="login_intro">Silahkan masukkan akun anda disini!</string>
     <string name="btn_login">Login</string>
 </resources>

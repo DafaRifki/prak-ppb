@@ -4,10 +4,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="hijau">#4CAF50</color>
     <color name="hijau_muda">#8BC34A</color>
-    <color name="merah">#FF0000</color>
-    <color name="merah_muda">#E91E63</color>
-    <color name="biru">#2196F3</color>
-    <color name="tosca">#40E0D0</color>
-    <color name="orange">#FF5722</color>
-    <color name="kuning">#FFEB3B</color>
+    <color name="merah">#FF4242</color>
+    <color name="merah_muda">#FF6E9F</color>
+    <color name="biru">#5EB3FF</color>
+    <color name="tosca">#8CFFF1</color>
+    <color name="orange">#FF9800</color>
+    <color name="kuning">#FFF283</color>
 </resources>
